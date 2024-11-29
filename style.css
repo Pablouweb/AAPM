@@ -1,0 +1,352 @@
+body {
+  margin: 0;
+  padding: o;
+  color: #242424;
+  font-family: sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: #000;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  display: block;
+  background-color: #fff;
+}
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section.module p {
+  margin-bottom: 40px;
+}
+section .module:last-child {
+  margin-bottom: 0;
+}
+
+section.module h2 {
+  margin-bottom: 40pxS;
+  font-size: 30px;
+}
+section.module.content {
+  padding: 40px 0;
+  background-color: #ece7d5;
+}
+section.module.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+section.module.parallax:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 8;
+}
+
+section.module.parallax-1 {
+  background-image: url(./imagemsala-I2DSI.jpg);
+}
+
+section.module.parallax-2 {
+  background-image: url(./vermelho.jpg);
+}
+
+section.module.parallax-3 {
+  background-image: url(./fundolastpage.jpg);
+}
+section.module.parallax h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 78px;
+  text-transform: uppercase;
+}
+
+.titulodiferente {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.grid-organization {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 30px;
+
+  margin-right: 30px;
+
+  gap: 30px;
+  text-align: center;
+  align-items: center;
+}
+.grid-box {
+  background-color: #24242447;
+  height: 600px;
+  border: 1px solid rgb(255, 255, 255);
+}
+.grid-box p {
+  text-align: justify;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.grid-organization {
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  gap: 620px; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite quebra de linha se necessário */
+  padding: 20px; /* Ajusta o espaçamento interno */
+}
+
+.grid-box {
+  width: 300px; /* Define uma largura fixa para os cards */
+  text-align: center; /* Centraliza o texto dentro do card */
+  border: 1px solid #ccc; /* Exemplo de borda */
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  background-color: #fff; /* Cor de fundo */
+}
+
+/* Cabeçalho */
+header {
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+header > div > img {
+  height: 150px;
+  width: 200px;
+  object-fit: cover;
+}
+
+header > div > h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header > menu {
+  background-color: transparent;
+}
+
+header > menu > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+header > menu > ul li {
+  padding: 10px;
+}
+
+header > menu > ul li > a {
+  text-decoration: none;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 10px 15px;
+
+  transition: 0.5s ease;
+}
+
+header > menu > ul li > a:hover {
+  background-color: rgb(170, 54, 54);
+  text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+  border-top: 1px solid black;
+  background-color: red;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 20px;
+}
+
+footer > img {
+  height: 150px;
+  width: 260px;
+  object-fit: cover;
+}
+
+footer > section {
+  background-color: white;
+  width: 300px;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+footer > section h3 {
+  font-size: 1.4em;
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: underline;
+}
+
+footer > section div {
+  background-color: transparent;
+  margin-top: 30px;
+}
+
+footer > section div > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+footer > section div > ul li {
+  background-color: transparent;
+}
+
+footer > section div > ul li > a {
+  text-decoration: none;
+}
+
+footer > section div > ul li > a > i {
+  font-size: 2em;
+
+  color: black;
+  transition: 0.5s ease;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+footer > section div > ul li > a > i:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Botão para Subir a Tela */
+#botao {
+  position: fixed;
+  right: 50px;
+  bottom: 70px;
+  background-color: transparent;
+  border: none;
+}
+
+#botao i {
+  padding: 20px;
+  background-color: rgba(255, 0, 0, 0.699);
+  color: white;
+  font-size: 2em;
+
+  transition: 0.5s ease;
+}
+
+#botao i:hover {
+  background-color: rgb(253, 101, 101);
+  color: black;
+}
+
+.blue-button {
+  background-color: #802121; /* vermelho padrão */
+  color: #fff; /* Texto branco */
+  border: none; /* Sem borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Indicador de clique */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Efeito suave */
+}
+
+.blue-button:hover {
+  background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+.grid-box img {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+}
+
+.grid-box h2 {
+  color: white;
+}
+
+.grid-box p {
+  margin-bottom: 100px;
+}
+
+.lastpic h1 {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+.grid-box h2 {
+  color: #000;
+}
+
+.lastpic {
+  background-image: url(./x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.decorativepaint {
+  position: absolute;
+}
+
+.contatos {
+  text-decoration: none;
+}
+
+.endereco {
+  text-decoration: none;
+}
+
+.icons {
+  width: 60px;
+  margin-left: -40px;
+}
